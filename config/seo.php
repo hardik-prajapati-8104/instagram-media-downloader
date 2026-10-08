@@ -1,0 +1,18 @@
+<?php
+
+return [
+    'site_name' => 'Instagram Media Downloader',
+    'pages' => [
+        'home' => ['route' => 'home', 'title' => 'Instagram Media Downloader – Videos, Reels, Photos, Carousels & Audio', 'description' => 'Download supported Instagram videos, reels, photos, carousels and audio in a few clicks. Independent third-party tool for content you own or have permission to save.', 'h1' => 'Instagram Media Downloader'],
+        'video' => ['route' => 'video', 'mode' => 'video', 'title' => 'Instagram Video Downloader – Save Videos in Original Quality', 'description' => 'Paste a public Instagram video link and download the video file. Use only for content you own or have permission to save.', 'h1' => 'Instagram Video Downloader', 'intro' => 'Paste the link of a public Instagram video. We fetch the real file details and show a preview before you download.'],
+        'reels' => ['route' => 'reels', 'mode' => 'reels', 'title' => 'Instagram Reels Downloader – Save Reels as MP4', 'description' => 'Download public Instagram Reels as MP4 files with a live preview. For content you own or have permission to save.', 'h1' => 'Instagram Reels Downloader', 'intro' => 'Paste a Reel link below. Resolution, duration and file size come straight from the media provider.'],
+        'photo' => ['route' => 'photo', 'mode' => 'photo', 'title' => 'Instagram Photo Downloader – Download Photos in Full Size', 'description' => 'Download public Instagram photos at the resolution returned by the media provider. Content you own or may save only.', 'h1' => 'Instagram Photo Downloader', 'intro' => 'Paste a post link containing a photo to preview and download it.'],
+        'carousel' => ['route' => 'carousel', 'mode' => 'carousel', 'title' => 'Instagram Carousel Downloader – Save Every Slide or Download as ZIP', 'description' => 'Download all photos and videos from a public Instagram carousel, one by one or as a single ZIP.', 'h1' => 'Instagram Carousel Downloader', 'intro' => 'Paste a carousel post link. Each slide is listed separately, and you can download everything as one ZIP.'],
+        'audio' => ['route' => 'audio', 'mode' => 'audio', 'title' => 'Instagram Audio Downloader – Convert Reels & Videos to MP3', 'description' => 'Extract the audio from a public Instagram video or reel as an MP3 file. For content you own or have permission to use.', 'h1' => 'Instagram Audio Downloader', 'intro' => 'Paste a video or Reel link. We extract the real audio track and convert it to MP3, or tell you if there is none.'],
+        'how-to' => ['route' => 'how-to', 'title' => 'How to Download Instagram Media – Step-by-Step Guide', 'description' => 'Learn how to copy an Instagram link and download supported media with this independent tool.', 'h1' => 'How to Download Instagram Media'],
+        'faq' => ['route' => 'faq', 'title' => 'FAQ – Instagram Media Downloader', 'description' => 'Answers about supported links, private content, file retention, audio extraction and more.', 'h1' => 'Frequently Asked Questions'],
+        'privacy' => ['route' => 'privacy', 'title' => 'Privacy Policy – Instagram Media Downloader', 'description' => 'What data this independent tool processes, how long files are kept, and how to contact us.', 'h1' => 'Privacy Policy'],
+        'terms' => ['route' => 'terms', 'title' => 'Terms of Use – Instagram Media Downloader', 'description' => 'Terms for using this independent third-party tool.', 'h1' => 'Terms of Use'],
+        'contact' => ['route' => 'contact', 'title' => 'Contact – Instagram Media Downloader', 'description' => 'Get in touch with the team behind this independent tool.', 'h1' => 'Contact Us'],
+    ],
+];
