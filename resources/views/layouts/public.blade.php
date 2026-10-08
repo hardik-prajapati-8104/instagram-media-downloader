@@ -34,9 +34,13 @@
 <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur" x-data="{ open: false }" @keydown.escape.window="open = false">
     <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <a href="{{ route('home') }}" class="flex items-center gap-2.5 font-semibold">
-            <span class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 text-white shadow-md shadow-brand-500/30"><i data-lucide="download" class="h-5 w-5"></i></span>
-            <span class="hidden text-[15px] sm:inline">Instagram Media Downloader</span>
-            <span class="text-[15px] sm:hidden">IG Downloader</span>
+            {{-- <span class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 text-white shadow-md shadow-brand-500/30"><i data-lucide="download" class="h-5 w-5"></i></span> --}}
+            <span class="hidden text-[15px] sm:inline">
+                <img src="{{ url('public/logo.png') }}" alt="" width="200px;" height="auto;">
+            </span>
+            <span class="text-[15px] sm:hidden">
+                <img src="{{ url('public/logo.png') }}" alt="" width="200px;" height="auto;">
+            </span>
         </a>
 
         <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
@@ -94,7 +98,7 @@
                 </ul>
             </div>
         </div>
-        <p class="mt-10 text-xs text-gray-400">© {{ date('Y') }} {{ config('app.name') }}. Not affiliated with Instagram or Meta.</p>
+        <p class="mt-10  text-center text-gray-400">© {{ date('Y') }} {{ config('app.name') }}. Not affiliated with Instagram or Meta. <span>Developed By Hardik Prajapati</span></p>
     </div>
 </footer>
 </body>
