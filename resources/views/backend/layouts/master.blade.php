@@ -32,7 +32,10 @@
 </head>
 <body>
     <aside class="sidebar">
-        <a class="brand" href="{{ route('admin.dashboard') }}"><i class="bi bi-download"></i> IG Downloader</a>
+        <a class="brand" href="{{ route('admin.dashboard') }}">
+            {{-- <i class="bi bi-download"></i> IG Downloader --}}
+            <img src ="{{ url('public/logo.png') }}" alt="Logo" width="200px;" height="100%;" />
+        </a>
         @php $links = [['admin.dashboard','bi-speedometer2','Dashboard'],['admin.downloads.index','bi-cloud-download','Downloads'],['admin.logs','bi-journal-text','Logs'],['admin.statistics','bi-bar-chart','Statistics'],['admin.settings','bi-gear','Settings']]; @endphp
         @foreach ($links as [$r,$i,$l])
             <a class="item {{ request()->routeIs($r . '*') ? 'active' : '' }}" href="{{ route($r) }}"><i class="bi {{ $i }}"></i>{{ $l }}</a>
